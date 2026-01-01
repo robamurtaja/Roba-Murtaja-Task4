@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shifra - Registration</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/book.css" />
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="courses.html">Courses</a>
+        <a class="nav-link" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <div class="mobile-auth">
+          <a class="btn btn-ghost" href="login.html">Login</a>
+          <a class="btn btn-primary" href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page reg-page">
+    <section class="section">
+      <div class="container reg-container">
+
+        <h1 class="reg-title">Registration</h1>
+
+        <div class="reg-layout">
+          <div class="reg-main">
+
+            <section class="reg-box">
+              <h2 class="reg-box-title">Personal Info</h2>
+
+              <div class="reg-field">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name">
+              </div>
+
+              <div class="reg-field">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+              </div>
+            </section>
+
+            <!-- Payment Method -->
+            <section class="reg-box">
+              <h2 class="reg-box-title">Payment Method</h2>
+
+              <label class="reg-radio">
+                <input type="radio" name="payment" checked>
+                <span class="reg-radio-mark"></span>
+                <span class="reg-radio-text">
+                  <i class="fa-regular fa-credit-card"></i>
+                  Credit/Debit Card
+                </span>
+              </label>
+
+              <label class="reg-radio">
+                <input type="radio" name="payment">
+                <span class="reg-radio-mark"></span>
+                <span class="reg-radio-text">
+                  <i class="fa-brands fa-paypal"></i>
+                  PayPal
+                </span>
+              </label>
+            </section>
+
+            <!-- Preferences -->
+            <section class="reg-box">
+              <h2 class="reg-box-title">Preferences</h2>
+
+              <div class="reg-pref-row">
+                <div>
+                  <div class="pref-title">Add to Calendar</div>
+                  <div class="pref-sub">Automatically add sessions to your calendar</div>
+                </div>
+
+                <label class="pref-toggle">
+                  <input type="checkbox" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="reg-pref-row">
+                <div>
+                  <div class="pref-title">Smart Reminders</div>
+                  <div class="pref-sub">Get notifications 24h before sessions</div>
+                </div>
+
+                <label class="pref-toggle">
+                  <input type="checkbox" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </section>
+
+            <!-- Confirmation -->
+            <section class="reg-box">
+              <h2 class="reg-box-title">Confirmation</h2>
+
+              <button class="reg-confirm-btn" type="button">
+                Confirm Registration
+              </button>
+            </section>
+
+          </div>
+
+          <!-- course card + total -->
+                <div class="reg-right">
+                
+                <!-- Course Card -->
+                <div class="reg-course-card">
+                    <div class="reg-course-img">
+                    <img src="assets/images/Advanced React Development.png" alt="Advanced React Development">
+                    </div>
+
+                    <div class="reg-course-body">
+                    <h3 class="reg-course-title">Advanced React Development</h3>
+                    <p class="reg-course-desc">
+                        Master modern React patterns, hooks,<br> and
+                        state management with hands-on<br> projects.
+                    </p>
+
+                    <div class="reg-course-meta">
+                        <span>Dr. Michael Chen</span>
+                        <span>8 weeks</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Total Line -->
+                <div class="reg-total-row">
+                    <span class="reg-total-label">Total:</span>
+                    <span class="reg-total-price">$249</span>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <!-- Left column -->
+    <div class="footer-left">
+      <div class="footer-brand">shifra</div>
+      <p class="footer-desc">
+        Empowering your learning journey with AI-driven course<br>recommendations and personalized training paths.
+      </p>
+    </div>
+
+    <!-- Middle column -->
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <a href="courses.html">All Courses</a>
+      <a href="my-path.html">My Learning Path</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Right column -->
+<div class="footer-col">
+  <h4>FOLLOW US</h4>
+
+  <div class="footer-social circle-icons">
+    <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr"
+       target="_blank" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q"
+       target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w"
+       target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    © 2024 Shifra Training Center. All rights reserved.
+  </div>
+</footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+.reg-page {
+  background: #ffffff;
+}
+
+.reg-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1f3f6d;
+  margin-bottom: 28px;
+}
+
+.reg-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.reg-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+  gap: 40px;
+}
+
+.reg-box {
+  background: #f3f8ff;
+  border-radius: 6px;
+  padding: 20px 22px;
+  border: 1px solid #e3ecf8;
+  margin-bottom: 18px;
+}
+
+.reg-box-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f3f6d;
+  margin: 0 0 14px;
+}
+
+.reg-field {
+  margin-bottom: 12px;
+}
+
+.reg-field label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #1f3f6d;
+  margin-bottom: 6px;
+}
+
+.reg-field input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e4e7f0;
+  padding: 10px 12px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+}
+
+.reg-field input:focus {
+  border-color: #b8cff8;
+}
+
+
+.reg-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 13px;
+  color: #1f3f6d;
+  user-select: none;
+}
+
+.reg-radio input {
+  display: none;
+}
+
+.reg-radio-mark {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #9fb6dd;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.reg-radio input:checked + .reg-radio-mark {
+  border-color: #1f3f6d;
+}
+
+.reg-radio input:checked + .reg-radio-mark::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  background: #1f3f6d;
+}
+
+.reg-radio-text i {
+  margin-right: 6px;
+  color: #1f3f6d;
+}
+
+.reg-pref-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #e4ecf8;
+}
+
+.reg-pref-row:first-of-type {
+  border-top: none;
+}
+
+.pref-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f3f6d;
+}
+
+.pref-sub {
+  font-size: 11px;
+  color: #92a1c1;
+}
+
+.pref-toggle {
+  position: relative;
+  width: 42px;
+  height: 22px;
+  display: inline-block;
+}
+
+.pref-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  inset: 0;
+  background: #d1d8ea;
+  border-radius: 999px;
+  transition: 0.25s;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: 0.25s;
+}
+
+.pref-toggle input:checked + .toggle-slider {
+  background: #1f3f6d;
+}
+
+.pref-toggle input:checked + .toggle-slider::before {
+  transform: translateX(18px);
+}
+
+.reg-confirm-btn {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 13px 0;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  background: #2b3f6d;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.reg-confirm-btn:hover {
+  filter: brightness(1.05);
+}
+
+.reg-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;     
+  gap: 40px;
+}
+
+.reg-course-card{
+  width: 340px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5edf7;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  overflow: hidden;          
+}
+
+.reg-course-img img{
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.reg-course-body{
+  padding: 18px 20px 16px;
+}
+
+.reg-course-title{
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #1f3f6d;
+}
+
+.reg-course-desc{
+  margin: 0 0 18px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #8fa0bf;
+  font-weight: 500;
+}
+
+.reg-course-meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11.5px;
+  color: #9aa8c3;
+  font-weight: 600;
+}
+
+.reg-total-row{
+  width: 340px;               
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #1f3f6d;
+}
+
+.reg-total-label{
+font-size: 17px;
+}
+
+.reg-total-price{
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* ========== Responsive ========== */
+
+@media (max-width: 900px) {
+  .reg-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .reg-sidebar {
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifra Training Center - Home</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/onboarding.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="courses.html">Courses</a>
+        <a class="nav-link" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <div class="mobile-auth">
+          <a class="btn btn-ghost" href="login.html">Login</a>
+          <a class="btn btn-primary" href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero-banner">
+      <img src="assets/images/hero.png" alt="Learning Path" class="hero-img">
+      <div class="hero-overlay">
+        <h1>Learning Path AI</h1>
+        <p>
+          Discover personalized training courses powered by artificial intelligence. Build your<br>
+          skills with expert-led sessions tailored to your career goals.
+        </p>
+        <a class="btn btn-primary hero-btn" href="courses.html">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Smart Recommendations -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-center">
+          <h2>Smart Recommendations</h2>
+          <p>Courses recommended just for you</p>
+        </div>
+
+        <div class="cards-grid cards-3" id="homeRecommendations"></div>
+      </div>
+    </section>
+
+    <!-- Quick Access -->
+    <section class="section soft">
+      <div class="container">
+        <div class="section-title-center">
+          <h2>Quick Access</h2>
+          <p>Jump right into your learning journey</p>
+        </div>
+
+        <div class="quick-grid">
+          <a class="quick-card" href="courses.html">
+            <div class="quick-ic">
+              <img src="assets/icons/courses.png" alt="Browse Courses">
+            </div>
+            <h3>Browse All Courses</h3>
+            <p class="muted">
+              Explore our complete cataloge <br>of training programs
+            </p>
+          </a>
+
+          <a class="quick-card" href="my-path.html">
+            <div class="quick-ic">
+              <img src="assets/icons/path.png" alt="My Path">
+            </div>
+            <h3>My Path</h3>
+            <p class="muted">
+              Track your progress and <br>continue learning
+            </p>
+          </a>
+
+          <a class="quick-card" href="contact.html">
+            <div class="quick-ic">
+              <img src="assets/icons/calendar.png" alt="Calendar">
+            </div>
+            <h3>Calendar</h3>
+            <p class="muted">
+              View upcoming sessions and <br>events
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="white-gap"></section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <div class="footer-brand">shifra</div>
+          <p class="footer-desc">
+            Empowering your learning journey with AI-driven course<br>
+            recommendations and personalized training paths.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <a href="courses.html">All Courses</a>
+          <a href="my-path.html">My Learning Path</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="footer-social circle-icons">
+            <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr"
+               target="_blank" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q"
+               target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w"
+               target="_blank" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        © 2024 Shifra Training Center. All rights reserved.
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

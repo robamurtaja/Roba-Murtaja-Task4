@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifra - My Path</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/my-path.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="courses.html">Courses</a>
+        <a class="nav-link active" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <div class="mobile-auth">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <div class="container">
+
+        <div class="page-head courses-head mypath-title">
+          <h1>My Learning Path</h1>
+        </div>
+
+        <div class="mypath-ai-card">
+          <div class="mypath-ai-icon">
+            <img src="assets/icons/ai-icon.png" alt="AI Icon">
+          </div>
+
+          <div class="mypath-ai-text">
+            <h3>Your AI Learning Assistant</h3>
+            <p>
+            Personalized path based on your goals and learning preferences.Our AI continuously adapts your curriculum to match your progress and interests.
+            </p>
+          </div>
+        </div>
+
+        <div class="mypath-progress-card">
+
+          <!-- Stats -->
+          <div class="mypath-stats">
+            <div class="mypath-stat">
+              <div class="mypath-stat-num" id="statCourses">4</div>
+              <div class="mypath-stat-label">Courses</div>
+            </div>
+
+            <div class="mypath-stat">
+              <div class="mypath-stat-num" id="statWeeks">12</div>
+              <div class="mypath-stat-label">Weeks</div>
+            </div>
+
+            <div class="mypath-stat">
+              <div class="mypath-stat-num" id="statProgress">35%</div>
+              <div class="mypath-stat-label">Progress</div>
+            </div>
+          </div>
+
+          <div class="mypath-progress-head">
+            <span>Overall Progress</span>
+            <span class="mypath-progress-pct" id="progressPercentText">35%</span>
+          </div>
+
+          <div class="mypath-bar">
+            <div class="mypath-bar-fill" id="progressBar" style="width:35%;"></div>
+          </div>
+
+          <div class="mypath-milestone">
+            <span class="mypath-milestone-label">Next milestone:</span>
+            <span class="mypath-milestone-text" id="nextMilestoneText">Complete React hooks section</span>
+          </div>
+        </div>
+
+<div class="path-list" id="myPathList">
+
+        <!-- Row 1 -->
+        <div class="path-item">
+          <div class="path-left">
+            <div class="path-icon is-done">
+              <span class="icon-check"></span>
+            </div>
+
+            <div class="path-text">
+              <div class="path-line">
+                <h4>React Fundamentals</h4>
+                <span class="dash">–</span>
+                <span class="weeks">2 weeks</span>
+                <span class="dash">–</span>
+                <span class="tag">Course</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="path-btn ghost">Review</button>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="path-item">
+          <div class="path-left">
+            <div class="path-icon is-play">
+              <span class="icon-play"></span>
+            </div>
+
+            <div class="path-text">
+              <div class="path-line">
+                <h4>Advanced React Development</h4>
+                <span class="dash">–</span>
+                <span class="weeks">8 weeks</span>
+                <span class="dash">–</span>
+                <span class="tag">Course</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="path-btn ghost">Continue →</button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="path-item">
+          <div class="path-left">
+            <div class="path-icon is-down">
+              <span class="icon-down"></span>
+            </div>
+
+            <div class="path-text">
+              <div class="path-line">
+                <h4>Portfolio Project</h4>
+                <span class="dash">–</span>
+                <span class="weeks">3 weeks</span>
+                <span class="dash">–</span>
+                <span class="tag">Course</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="path-btn ghost">Continue →</button>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="path-item">
+          <div class="path-left">
+            <div class="path-icon is-down">
+              <span class="icon-down"></span>
+            </div>
+
+            <div class="path-text">
+              <div class="path-line">
+                <h4>UI/UX Design Principles</h4>
+                <span class="dash">–</span>
+                <span class="weeks">6 weeks</span>
+                <span class="dash">–</span>
+                <span class="tag">Course</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="path-btn primary">Continue →</button>
+        </div>
+
+      </div>
+
+        <div class="mypath-suggest-card">
+          <div class="mypath-suggest-top">
+
+            <!-- ICON (image imported) -->
+            <div class="mypath-suggest-icon">
+              <img src="assets/icons/ai-icon.png" alt="AI Icon">
+            </div>
+
+            <!-- CONTENT -->
+            <div class="mypath-suggest-content">
+              <h3>AI Suggestion</h3>
+              <p>
+                Based on your progress in React development, consider taking a UI/UX Design course next to complement your technical skills.
+                This will help you create more user-friendly and visually appealing applications.
+              </p>
+
+              <!-- BUTTON -->
+              <a class="btn btn-primary mypath-suggest-btn" href="courses.html">
+                View Recommended Course
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <div class="footer-brand">shifra</div>
+          <p class="footer-desc">
+            Empowering your learning journey with AI-driven course<br>recommendations and personalized training paths.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <a href="courses.html">All Courses</a>
+          <a href="my-path.html">My Learning Path</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="footer-social circle-icons">
+            <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w" target="_blank" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">© 2024 Shifra Training Center. All rights reserved.</div>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

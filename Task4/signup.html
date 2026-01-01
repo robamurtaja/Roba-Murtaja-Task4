@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifra - Sign Up</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="auth-body">
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="courses.html">Courses</a>
+        <a class="nav-link" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <div class="mobile-auth">
+          <a class="btn btn-ghost" href="login.html">Login</a>
+          <a class="btn btn-primary" href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions auth-nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="page auth-page">
+    <section class="section">
+      <div class="container">
+
+        <div class="auth-wrap">
+          <h1 class="auth-title">Create Account</h1>
+          <p class="auth-subtitle">Join Shifra and start your learning journey</p>
+
+          <form class="auth-form" id="signupForm">
+
+            <div class="auth-grid-2">
+              <div class="field">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name" required>
+              </div>
+
+              <div class="field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="field">
+              <label>Password</label>
+              <input type="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="field">
+              <label>Confirm Password</label>
+              <input type="password" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="auth-agree">
+              <label class="agree-check">
+                <input type="checkbox" required>
+                <span class="agree-text">I agree to the Terms and Privacy Policy</span>
+              </label>
+            </div>
+
+            <button class="auth-submit" type="submit">Sign In</button>
+
+            <div class="auth-divider">Or sign up with</div>
+
+            <div class="auth-social">
+              <button class="auth-social-btn" type="button">
+                <span class="auth-social-ic google">G</span>
+                <span class="auth-social-text">Google</span>
+              </button>
+
+              <button class="auth-social-btn" type="button">
+                <span class="auth-social-ic facebook">f</span>
+                <span class="auth-social-text">Facebook</span>
+              </button>
+            </div>
+
+            <p class="auth-bottom">
+              Already have an account?
+              <a class="auth-link" href="login.html">Sign in here</a>
+            </p>
+
+            <p class="muted small" id="signupMsg"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <!-- Left column -->
+    <div class="footer-left">
+      <div class="footer-brand">shifra</div>
+      <p class="footer-desc">
+        Empowering your learning journey with AI-driven course<br>recommendations and personalized training paths.
+      </p>
+    </div>
+
+    <!-- Middle column -->
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <a href="courses.html">All Courses</a>
+      <a href="my-path.html">My Learning Path</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Right column -->
+<div class="footer-col">
+  <h4>FOLLOW US</h4>
+
+  <div class="footer-social circle-icons">
+    <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr"
+       target="_blank" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q"
+       target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w"
+       target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    © 2024 Shifra Training Center. All rights reserved.
+  </div>
+</footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifra - Login</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="auth-body">
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="courses.html">Courses</a>
+        <a class="nav-link" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <div class="mobile-auth">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions auth-nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <section class="auth-wrap">
+
+      <h1 class="auth-title">Welcome Back</h1>
+      <p class="auth-subtitle">Sign in to your account to continue learning</p>
+
+      <form class="auth-form" id="loginForm">
+
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="field">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required />
+        </div>
+
+        <div class="auth-row">
+          <label class="remember-check">
+            <input type="checkbox" />
+            <span class="remember-text">Remember me</span>
+          </label>
+
+          <a class="auth-forgot" href="#">Forgot your password?</a>
+        </div>
+
+        <button class="auth-submit" type="submit">Login</button>
+
+        <div class="auth-divider">
+          <span>Or continue with</span>
+        </div>
+
+        <div class="auth-social">
+          <button type="button" class="auth-social-btn">
+            <span class="auth-social-ic google">G</span>
+            <span class="auth-social-text">Google</span>
+          </button>
+
+          <button type="button" class="auth-social-btn">
+            <span class="auth-social-ic facebook">f</span>
+            <span class="auth-social-text">Facebook</span>
+          </button>
+        </div>
+
+        <p class="auth-bottom">
+          Don't have an account? <a class="auth-link" href="signup.html">Sign up here</a>
+        </p>
+
+        <p class="muted small" id="loginMsg"></p>
+      </form>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-left">
+        <div class="footer-brand">shifra</div>
+        <p class="footer-desc">
+          Empowering your learning journey with AI-driven course<br>recommendations and personalized training paths.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="courses.html">All Courses</a>
+        <a href="my-path.html">My Learning Path</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>FOLLOW US</h4>
+        <div class="footer-social circle-icons">
+          <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w" target="_blank" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      © 2024 Shifra Training Center. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

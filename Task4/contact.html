@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifra - Contact</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="courses.html">Courses</a>
+        <a class="nav-link" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+        <div class="mobile-auth">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <div class="container">
+
+        <!-- Title -->
+        <div class="contact-head">
+          <h1>Contact Form</h1>
+        </div>
+
+        <!-- Form Card -->
+          <form class="contact-form" id="contactForm" autocomplete="off">
+
+            <div class="field">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="field">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="field">
+              <label>Message</label>
+              <textarea rows="6" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <button class="contact-submit" type="submit">Send Message</button>
+            <p class="muted small" id="contactMsg"></p>
+
+          </form>
+
+        <!-- Location -->
+        <div class="contact-section-title">
+          <h2>Location</h2>
+        </div>
+
+        <div class="location-card">
+          <img class="location-img" src="assets/images/location-map.png" alt="Location map">
+        </div>
+
+        <div class="visit-card">
+          <h3>Visit Our Campus</h3>
+          <p>123 Education Street, Learning District, City, State 12345</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="contact-section-title">
+          <h2>Social Links</h2>
+        </div>
+
+        <div class="social-row">
+          <a class="social-circle" href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a class="social-circle" href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a class="social-circle" href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w" target="_blank" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a class="social-circle" href="https://t.me/code_center1" target="_blank" aria-label="Telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <div class="footer-brand">shifra</div>
+          <p class="footer-desc">
+            Empowering your learning journey with AI-driven course<br>recommendations and personalized training paths.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <a href="courses.html">All Courses</a>
+          <a href="my-path.html">My Learning Path</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="footer-social circle-icons">
+            <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w" target="_blank" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">© 2024 Shifra Training Center. All rights reserved.</div>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

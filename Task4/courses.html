@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifra - Courses</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="courses.html">Courses</a>
+        <a class="nav-link" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <div class="mobile-auth">
+          <a class="btn btn-ghost" href="login.html">Login</a>
+          <a class="btn btn-primary" href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions auth-nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <section class="section">
+      <div class="container">
+
+        <div class="page-head courses-head">
+          <h1>All Courses</h1>
+          <p>Discover the perfect course to advance your career</p>
+        </div>
+
+        <div class="filters figma-filters">
+          <div class="field">
+            <label>Category</label>
+            <select id="courseCategory">
+              <option value="all">All Category</option>
+              <option value="design">Design</option>
+              <option value="dev">Development</option>
+              <option value="data">Data</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Level</label>
+            <select id="courseLevel">
+              <option value="all">All Levels</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Format</label>
+            <select id="courseType">
+              <option value="all">All Format</option>
+              <option value="online">Online</option>
+              <option value="in-person">In-person</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Format</label>
+            <select id="courseSort">
+              <option value="popular">Most Popular</option>
+              <option value="price_low">Price: Low to High</option>
+              <option value="price_high">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cards-grid cards-3" id="coursesGrid"></div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div class="footer-left">
+          <div class="footer-brand">shifra</div>
+          <p class="footer-desc">
+            Empowering your learning journey with AI-driven course<br>
+            recommendations and personalized training paths.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <a href="courses.html">All Courses</a>
+          <a href="my-path.html">My Learning Path</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="footer-social circle-icons">
+            <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr"
+               target="_blank" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q"
+               target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w"
+               target="_blank" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        © 2024 Shifra Training Center. All rights reserved.
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

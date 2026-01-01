@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shifra - Onboarding</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/onboarding.css" />
+</head>
+<body class="onboard-body">
+
+  <div class="onboard-wrapper">
+
+    <!-- ========== SCREEN 1 ========== -->
+    <section class="onboard-screen active" data-step="1">
+      <div class="onboard-top">
+        <img
+          src="assets/images/onboard1.png"
+          alt="Learning Path AI"
+          class="onboard-img"
+        />
+
+        <h1 class="onboard-title">Learning Path AI</h1>
+
+        <p class="onboard-text">
+          Personalized learning paths powered by artificial intelligence
+          to match your goals and pace.
+        </p>
+
+        <div class="onboard-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="onboard-bottom">
+        <button class="btn-primary-wide">Next</button>
+        <button class="btn-secondary-wide">Skip</button>
+      </div>
+    </section>
+
+    <!-- ========== SCREEN 2 ========== -->
+    <section class="onboard-screen" data-step="2">
+      <div class="onboard-top">
+        <img
+          src="assets/images/onboard2.png"
+          alt="Smart Reminders"
+          class="onboard-img"
+        />
+
+        <h1 class="onboard-title">Smart Reminders</h1>
+
+        <p class="onboard-text">
+          Never miss a class or deadline with intelligent notifications
+          tailored to your schedule.
+        </p>
+
+        <div class="onboard-dots">
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="onboard-bottom">
+        <button class="btn-primary-wide">Next</button>
+        <button class="btn-secondary-wide" onclick="finishOnboarding()">Skip</button>
+      </div>
+    </section>
+
+    <!-- ========== SCREEN 3 ========== -->
+    <section class="onboard-screen" data-step="3">
+      <div class="onboard-top">
+        <img
+          src="assets/images/onboard3.png"
+          alt="Smart Recommendations"
+          class="onboard-img"
+        />
+
+        <h1 class="onboard-title">Smart Recommendations</h1>
+
+        <p class="onboard-text">
+          Discover courses and content recommendations based on your learning
+          progress and interests.
+        </p>
+
+        <div class="onboard-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot active"></span>
+        </div>
+      </div>
+
+      <div class="onboard-bottom">
+        <button class="btn-primary-wide" onclick="finishOnboarding()">Get Started</button>
+      </div>
+    </section>
+
+  </div>
+<script src="js/onboarding.js"></script>
+
+</body>
+</html>

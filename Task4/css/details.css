@@ -1,0 +1,293 @@
+.details-page{
+  padding-top: 30px;
+}
+
+.details-title{
+  margin: 0 0 16px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #1f3f6d;
+}
+
+.details-layout{
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 22px;
+  align-items: start;
+}
+
+.details-cover{
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e7edf6;
+  background: #fff;
+}
+
+.details-cover img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.details-course-name{
+  margin: 18px 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #1f3f6d;
+}
+
+.details-meta{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-size: 11.5px;
+  color: #2B3F6D;
+  font-weight: 600;
+}
+
+.details-meta .sep{
+  color: #2B3F6D;
+  font-weight: 900;
+}
+
+.details-price{
+  margin: 12px 0 18px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #2B3F6D;
+}
+
+.details-subhead{
+  margin: 30px 0 8px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #2B3F6D;
+}
+
+.details-text{
+  margin: 0 0 30px;
+  font-size: 12.5px;
+  line-height: 1.8;
+  color: #8fa0bf;
+  max-width: 720px;
+}
+
+.suggest-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.suggest-card {
+  background: #ffffff;
+  border: 1px solid #e3e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 330px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggest-img {
+  width: 100%;
+  padding: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggest-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+  border-radius: 10px;
+  display: block;
+}
+
+.suggest-body{
+  padding: 12px;
+}
+
+.suggest-title{
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #1f3f6d;
+}
+
+.suggest-desc{
+  margin: 0 0 12px;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: #8fa0bf;
+  font-weight: 600;
+  min-height: 34px;
+}
+
+.suggest-actions{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.suggest-btn{
+  height: 32px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.suggest-btn.light{
+  background: #eef2f7;
+  color: #1f3f6d;
+}
+
+.suggest-btn.dark{
+  background: #2b3f6d;
+  color: #fff;
+}
+
+.details-right{
+  display: grid;
+  gap: 14px;
+}
+
+.side-card{
+  border-radius: 6px;
+  border: 1px solid #e7edf6;
+  background: #eef5ff;
+  padding: 14px;
+}
+
+.side-title{
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #1f3f6d;
+}
+
+.side-label{
+  font-size: 11px;
+  font-weight: 800;
+  color: #1f3f6d;
+  margin-bottom: 4px;
+}
+
+.side-muted{
+  font-size: 11px;
+  color: #8fa0bf;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.side-btn{
+  width: 100%;
+  height: 34px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11.5px;
+  font-weight: 800;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.side-btn.light{
+  display:block;
+  width:100%;
+  border:0;
+  border-radius:6px;
+  padding:12px 16px;
+  background:#9DC7FF;      
+  color:#1F3F6D;
+  font-weight:600;
+  font-size:13px;
+  text-align:left; 
+}
+
+.side-btn.dark{
+  background: #2B3F6D;
+  color: #fff;
+}
+
+.side-hint{
+  margin-top: 10px;
+  padding: 10px;
+  background: #ffffffb3;
+  border: 1px solid #d9e3f2;
+  border-radius: 4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #8fa0bf;
+}
+
+.hint-ic{
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: #eef5ff;
+  border: 1px solid #d9e3f2;
+  display: grid;
+  place-items: center;
+  color: #1f3f6d;
+}
+
+.registration-card{
+  margin-top:20px;
+  padding:20px 18px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(76.01deg, #3D4F73 0%, #F1F5FA 130%);
+  color:#FFFFFF;
+}
+
+.register-card .side-title{
+  color: #fff;
+}
+
+.reg-price{
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 10px 0 22px;
+}
+
+.register-card .side-btn.dark{
+  width:100%;
+  padding:13px 0;
+  border-radius:6px;
+  border:none;
+  background:#1F3F6D;
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.register-btn:hover{
+  filter:brightness(1.05);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .details-layout{
+    grid-template-columns: 1fr;
+  }
+  .suggest-grid{
+    grid-template-columns: 1fr;
+  }
+}

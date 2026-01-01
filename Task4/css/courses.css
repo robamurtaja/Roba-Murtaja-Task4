@@ -1,0 +1,138 @@
+#coursesGrid .card-actions{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+#coursesGrid .card-actions .btn{
+  width: 100%;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#coursesGrid .btn-outline{
+  background: #f3f4f6;
+  border: 1px solid #f3f4f6;
+  color: #1f3f6d;
+}
+
+#coursesGrid .btn-primary{
+  background: #1f3f6d;
+  border: 1px solid #1f3f6d;
+  color: #fff;
+}
+
+#coursesGrid .card-media{ position: relative; }
+
+#coursesGrid .rating-badge{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 3px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1f3f6d;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 6px 14px rgba(16,24,40,0.12);
+}
+
+#coursesGrid .rating-badge i{
+  color: #f59e0b;
+  font-size: 11px;
+}
+
+#coursesGrid .course-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #9aa8c3;
+  font-size: 11.5px;
+  font-weight: 500;
+}
+
+#coursesGrid .course-pills{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#coursesGrid .pill{
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  border: none;
+}
+
+#coursesGrid .pill.gray{ background: #eef2f7; color: #6b7280; }
+#coursesGrid .pill.blue{ background: #dbeafe; color: #1f3f6d; }
+#coursesGrid .pill.green{ background: #dcfce7; color: #166534; }
+
+.page-head.courses-head{ margin-bottom: 18px; }
+
+.page-head.courses-head h1{
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #1f3f6d;
+}
+
+.page-head.courses-head p{
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #9aa8c3;
+}
+
+.filters{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+  gap:12px;
+  padding:14px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:#fff;
+  box-shadow:0 10px 30px rgba(16,24,40,.04);
+  margin-bottom:18px;
+}
+
+.filters.figma-filters{
+  background: #eef5ff;
+  border: none;
+  border-radius: 8px;
+  padding: 22px 22px;
+  box-shadow: none;
+  max-width: 1100px;
+  margin: 18px auto 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.filters.figma-filters .field label{
+  font-size: 12px;
+  font-weight: 700;
+  color: #1f3f6d;
+  margin-bottom: 8px;
+}
+
+.filters.figma-filters .field select{
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #d9e3f2;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1f3f6d;
+  padding: 0 12px;
+}
+.filters.figma-filters .field select:focus{ border-color: #b9cbe9; }

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifra - Course Details</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/details.css" />
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a class="brand" href="index.html">
+        <span class="brand-name">shifra</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="courses.html">Courses</a>
+        <a class="nav-link" href="my-path.html">My Path</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <div class="mobile-auth">
+          <a class="btn btn-ghost" href="login.html">Login</a>
+          <a class="btn btn-primary" href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions auth-nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="page">
+
+    <section class="section details-page">
+      <div class="container">
+
+        <h1 class="details-title">Course Details</h1>
+
+        <div class="details-layout">
+
+          <!-- LEFT COLUMN -->
+          <div class="details-left">
+
+            <div class="details-cover">
+              <img src="assets/images/course4.png" alt="Course Cover">
+            </div>
+
+            <h2 class="details-course-name">Advanced React Development</h2>
+
+            <div class="details-meta">
+              <span>Sarah Johnson</span>
+              <span class="sep">•</span>
+              <span>4.9 ★</span>
+              <span class="sep">•</span>
+              <span>8 weeks</span>
+            </div>
+
+            <div class="details-price">$299</div>
+
+            <h3 class="details-subhead">Course Description</h3>
+            <p class="details-text">
+              Learn Python, statistics, and machine learning for data-driven decision making.
+              This course provides hands-on experience with real datasets and industry-standard tools.
+            </p>
+
+            <h3 class="details-subhead">Suggested Courses</h3>
+
+            <div class="suggest-grid">
+
+              <!-- Suggested Card 1 -->
+              <div class="suggest-card">
+                <div class="suggest-img">
+                  <img src="assets/images/course4.png" alt="Suggested course">
+                </div>
+                <div class="suggest-body">
+                  <h4 class="suggest-title">Advanced React Development</h4>
+                  <p class="suggest-desc">
+                    Master modern React patterns, hooks, and <br>state management with hands-on projects.
+                  </p>
+                  <div class="suggest-actions">
+                    <a class="suggest-btn light" href="details.html?id=1">Details</a>
+                    <a class="suggest-btn dark" href="book.html?id=1">Book</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Suggested Card 2 -->
+              <div class="suggest-card">
+                <div class="suggest-img">
+                  <img src="assets/images/suggest-2.png" alt="Suggested course">
+                </div>
+                <div class="suggest-body">
+                  <h4 class="suggest-title">Data Science Fundamentals</h4>
+                  <p class="suggest-desc">
+                    Learn Python, statistics, and machine learning <br>for data-driven decision making.
+                  </p>
+                  <div class="suggest-actions">
+                    <a class="suggest-btn light" href="details.html?id=2">Details</a>
+                    <a class="suggest-btn dark" href="book.html?id=2">Book</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Suggested Card 3 -->
+              <div class="suggest-card">
+                <div class="suggest-img">
+                  <img src="assets/images/UXUI Design Masterclass.png" alt="Suggested course">
+                </div>
+                <div class="suggest-body">
+                  <h4 class="suggest-title">UX/UI Design Masterclass</h4>
+                  <p class="suggest-desc">
+                    Create intuitive user experiences with design <br>thinking and prototyping tools.
+                  </p>
+                  <div class="suggest-actions">
+                    <a class="suggest-btn light" href="details.html?id=3">Details</a>
+                    <a class="suggest-btn dark" href="book.html?id=3">Book</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <aside class="details-right">
+
+            <div class="side-card schedule-card">
+              <h3 class="side-title">Schedule</h3>
+
+              <div class="side-label">Next Session</div>
+              <div class="side-muted">Monday, Jan 15 • 2:00 PM - 4:00 PM</div>
+
+              <button class="side-btn light" type="button">Add to Calendar</button>
+
+              <div class="side-hint">
+                <span class="hint-ic"><i class="fa-regular fa-calendar"></i></span>
+                <span>Reminder will be sent 24h before course</span>
+              </div>
+            </div>
+
+            <div class="registration-card">
+              <h3 class="side-title">Registration</h3>
+              <div class="reg-price">$499</div>
+              <a class="side-btn dark" href="book.html?id=1">Register Now</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div class="footer-left">
+          <div class="footer-brand">shifra</div>
+          <p class="footer-desc">
+            Empowering your learning journey with AI-driven course<br>
+            recommendations and personalized training paths.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <a href="courses.html">All Courses</a>
+          <a href="my-path.html">My Learning Path</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="footer-social circle-icons">
+            <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w" target="_blank" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        © 2024 Shifra Training Center. All rights reserved.
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
